@@ -1,0 +1,34 @@
+# Configuration file for Alzheimer's ML project
+
+data:
+  cross_sectional_path: "data/oasis_cross-sectional-5708aa0a98d82080.xlsx"
+  longitudinal_path: "data/oasis_longitudinal_demographics-8d83e569fa2e2d30.xlsx"
+
+models:
+  rf:
+    save_path: "models/rf_cross_sectional.pkl"
+    n_trials: 75
+    random_state: 42
+  
+  xgb:
+    save_path: "models/xgb_longitudinal.pkl"
+    n_trials: 300
+    random_state: 42
+
+preprocessing:
+  cross_sectional:
+    save_path: "models/preprocessor_cross_sectional.pkl"
+  
+  longitudinal:
+    save_path: "models/preprocessor_longitudinal.pkl"
+
+training:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
+
+evaluation:
+  metrics: ["accuracy", "f1_score", "roc_auc", "brier_score"]
+
+
+
