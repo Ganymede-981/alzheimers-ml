@@ -2,7 +2,7 @@
 
 A machine learning project for predicting Alzheimer's disease progression using the OASIS dataset. This repository contains models for both cross-sectional and longitudinal analysis.
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 alzheimers-ml/
@@ -413,7 +413,7 @@ Key libraries:
 See `requirements.txt` for full list.
 [Add contributors here]
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - OASIS dataset providers
 - Open-source ML community
