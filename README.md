@@ -59,7 +59,7 @@ alzheimers-ml/
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/Ganymede-981/alzheimers-ml
 cd alzheimers-ml
 ```
 
