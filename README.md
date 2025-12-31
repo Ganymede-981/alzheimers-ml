@@ -48,7 +48,7 @@ alzheimers-ml/
 └── REPOSITORY_OVERVIEW.md        # Repository overview
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -78,11 +78,11 @@ pip install -r requirements.txt
    - `oasis_cross-sectional-5708aa0a98d82080.xlsx`
    - `oasis_longitudinal_demographics-8d83e569fa2e2d30.xlsx`
 
-## 📊 Usage
+## Usage
 
 ### Step 1: Training Models
 
-**⚠️ Important:** You must train the models before making predictions!
+** Important:** You must train the models before making predictions!
 
 #### Option 1: Train Full Pipeline (Recommended)
 Trains both cross-sectional and longitudinal models sequentially:
@@ -261,7 +261,7 @@ print(results)
    - Uses CDR predictions from cross-sectional model
    - Predicts dementia progression (Group_binary)
 
-## 📝 Code Structure Details
+## Code Structure Details
 
 ### Data Loading (`src/data/load_data.py`)
 
@@ -352,7 +352,7 @@ metrics = evaluate_model(model, X_test, y_test)
 print_evaluation_results(metrics)
 ```
 
-## 📈 Model Performance
+## Model Performance
 
 ### Cross-Sectional Random Forest
 - **ROC-AUC**: ~0.93
@@ -364,7 +364,7 @@ print_evaluation_results(metrics)
 - **F1 Score**: ~0.90
 - **Accuracy**: ~0.90
 
-## 🔧 Configuration
+## Configuration
 
 Edit `configs/config.yaml` to modify:
 - Data paths
@@ -372,7 +372,7 @@ Edit `configs/config.yaml` to modify:
 - Training parameters
 - Evaluation metrics
 
-## 📊 Visualizations
+## Visualizations
 
 After training, visualizations are automatically generated and saved to the `results/` directory:
 
@@ -393,14 +393,14 @@ python scripts/generate_visualizations.py --model cross
 python scripts/generate_visualizations.py --model long
 ```
 
-## 🧪 Testing
+## Testing
 
 Run tests (when implemented):
 ```bash
 pytest tests/
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 Key libraries:
 - `pandas`: Data manipulation
@@ -411,13 +411,6 @@ Key libraries:
 - `shap`: Model interpretability
 
 See `requirements.txt` for full list.
-
-## 📄 License
-
-[Add your license here]
-
-## 👥 Contributors
-
 [Add contributors here]
 
 ## 🙏 Acknowledgments
