@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-## 🚀 How to Run the Code
+## How to Run the Code
 
 ### Step 1: Install Dependencies
 
@@ -25,15 +25,6 @@ This will:
 1. Train the Random Forest model (takes ~5-10 minutes)
 2. Train the XGBoost model (takes ~10-20 minutes)
 3. Save models to `models/` directory
-
-**Alternative:** Train models separately:
-```bash
-# Train cross-sectional model first
-python scripts/train_cross_sectional.py
-
-# Then train longitudinal model
-python scripts/train_longitudinal.py
-```
 
 ### Step 4: Make Predictions
 
@@ -87,7 +78,7 @@ patients_df['probability'] = probabilities
 patients_df.to_csv('results.csv', index=False)
 ```
 
-## 📋 Required Input Format
+## Required Input Format
 
 ### For Cross-Sectional Predictions
 
@@ -115,7 +106,7 @@ All columns above, plus:
 | Visit | numeric | Visit number | 1, 2, 3... |
 | MR Delay | numeric | Days since first visit | 0, 365, 730... |
 
-## 🎯 Common Use Cases
+## Common Use Cases
 
 ### Use Case 1: Predict from Single Visit
 
@@ -157,7 +148,7 @@ results = predict_longitudinal(ldf)
 print(results)
 ```
 
-## ❓ Troubleshooting
+## Troubleshooting
 
 ### Error: "Model files not found"
 
@@ -176,7 +167,7 @@ python scripts/main.py
 - `data/oasis_cross-sectional-5708aa0a98d82080.xlsx`
 - `data/oasis_longitudinal_demographics-8d83e569fa2e2d30.xlsx`
 
-## 📞 Need Help?
+## Need Help?
 
 1. Check `README.md` for detailed documentation
 2. Run `python scripts/example_usage.py` to see examples
