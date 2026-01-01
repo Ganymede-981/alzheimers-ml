@@ -1,6 +1,6 @@
 # Alzheimer's ML Repository - Complete Overview
 
-## 🎯 Project Summary
+## Project Summary
 
 This repository contains a complete machine learning pipeline for predicting Alzheimer's disease progression using the OASIS dataset. The project includes:
 
@@ -10,37 +10,37 @@ This repository contains a complete machine learning pipeline for predicting Alz
 - **Hyperparameter Optimization**: Uses Optuna for automated tuning
 - **Comprehensive Evaluation**: Metrics, visualizations, and SHAP analysis
 
-## 📊 Repository Structure
+## Repository Structure
 
 ```
 alzheimers-ml/
 │
-├── 📁 src/                          # Main source code package
+├── src/                          # Main source code package
 │   ├── __init__.py                  # Package initialization (version info)
 │   │
-│   ├── 📁 data/                     # Data handling modules
+│   ├── data/                     # Data handling modules
 │   │   ├── __init__.py
 │   │   ├── load_data.py             # Data loading functions
 │   │   └── preprocessing.py       # Preprocessing pipelines
 │   │
-│   ├── 📁 features/                 # Feature engineering
+│   ├── features/                 # Feature engineering
 │   │   ├── __init__.py
 │   │   └── feature_engineering.py   # Longitudinal feature extraction
 │   │
-│   ├── 📁 models/                   # ML model definitions
+│   ├── models/                   # ML model definitions
 │   │   ├── __init__.py
 │   │   ├── random_forest.py         # RF with Optuna optimization
 │   │   └── xgboost_model.py         # XGBoost with Optuna optimization
 │   │
-│   ├── 📁 evaluation/               # Evaluation utilities
+│   ├── evaluation/               # Evaluation utilities
 │   │   ├── __init__.py
 │   │   ├── metrics.py               # Evaluation metrics
 │   │   └── visualization.py         # Plotting functions
 │   │
-│   └── 📁 utils/                    # Utility functions
+│   └── utils/                    # Utility functions
 │       └── __init__.py
 │
-├── 📁 scripts/                      # Executable training scripts
+├── scripts/                      # Executable training scripts
 │   ├── train_cross_sectional.py    # Train RF on cross-sectional data
 │   ├── train_longitudinal.py       # Train XGBoost on longitudinal data
 │   ├── main.py                      # Full training pipeline
@@ -48,35 +48,35 @@ alzheimers-ml/
 │   ├── example_usage.py             # Example usage demonstrations
 │   └── generate_visualizations.py   # Generate model visualizations
 │
-├── 📁 notebooks/                    # Jupyter notebooks (optional)
+├── notebooks/                    # Jupyter notebooks (optional)
 │
-├── 📁 data/                         # Data directory (gitignored)
+├── data/                         # Data directory (gitignored)
 │   ├── oasis_cross-sectional-5708aa0a98d82080.xlsx
 │   └── oasis_longitudinal_demographics-8d83e569fa2e2d30.xlsx
 │
-├── 📁 models/                       # Saved models (gitignored)
+├── models/                       # Saved models (gitignored)
 │   ├── rf_cross_sectional.pkl
 │   ├── xgb_longitudinal.pkl
 │   ├── preprocessor_cross_sectional.pkl
 │   ├── preprocessor_longitudinal.pkl
 │   └── label_encoder.pkl
 │
-├── 📁 configs/                      # Configuration files
+├── configs/                      # Configuration files
 │   └── config.yaml                  # Centralized configuration
 │
-├── 📁 tests/                        # Unit tests (to be implemented)
+├── tests/                        # Unit tests (to be implemented)
 │
-├── 📁 results/                      # Output results (gitignored)
+├── results/                      # Output results (gitignored)
 │
-├── 📄 requirements.txt              # Python dependencies
-├── 📄 .gitignore                    # Git ignore rules
-├── 📄 README.md                     # Main documentation
-├── 📄 QUICK_START.md                # Quick start guide
-├── 📄 STRUCTURE.md                  # Detailed structure documentation
-└── 📄 REPOSITORY_OVERVIEW.md        # This file
+├── requirements.txt              # Python dependencies
+├── .gitignore                    # Git ignore rules
+├── README.md                     # Main documentation
+├── QUICK_START.md                # Quick start guide
+├── STRUCTURE.md                  # Detailed structure documentation
+└── REPOSITORY_OVERVIEW.md        # This file
 ```
 
-## 🔄 Data Flow Pipeline
+## Data Flow Pipeline
 
 ### 1. Cross-Sectional Pipeline
 
@@ -187,7 +187,7 @@ Cross-Sectional Data
         └─────────┴──► Final Predictions
 ```
 
-## 📝 Key Files and Their Contents
+## Key Files and Their Contents
 
 ### Data Loading (`src/data/load_data.py`)
 
@@ -282,7 +282,7 @@ preprocess = ColumnTransformer([
 - Runs both scripts sequentially
 - Passes RF model to longitudinal training
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### 1. Setup
 
@@ -336,7 +336,7 @@ X_new_trf = preprocessor.transform(X_new)
 predictions = rf_model.predict(X_new_trf)
 ```
 
-## 📊 Model Performance
+## Model Performance
 
 ### Cross-Sectional Random Forest
 - **ROC-AUC**: ~0.93
@@ -372,14 +372,14 @@ Edit `configs/config.yaml` to modify:
 5. **Model Stacking**: Cross-sectional model predictions used as features in longitudinal model
 6. **Hyperparameter Optimization**: Optuna for automated tuning
 
-## 🔍 File Size Notes
+## File Size Notes
 
 - Data files (`.xlsx`): Large, gitignored
 - Model files (`.pkl`): Large, gitignored
 - Source code: Small, version controlled
 - Results/plots: Gitignored
 
-## 🛠️ Development
+## Development
 
 ### Adding New Features
 
@@ -400,7 +400,7 @@ Edit `configs/config.yaml` to modify:
 pytest tests/
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 - **pandas**: Data manipulation
 - **numpy**: Numerical operations
@@ -412,13 +412,6 @@ pytest tests/
 - **openpyxl**: Excel file reading
 - **joblib**: Model serialization
 
-## 📄 License
-
-[Add your license here]
-
-## 👥 Contributors
-
-[Add contributors here]
 
 ## 🙏 Acknowledgments
 
