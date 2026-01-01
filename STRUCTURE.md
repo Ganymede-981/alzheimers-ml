@@ -2,7 +2,7 @@
 
 This document provides a detailed breakdown of the repository structure and what goes into each file.
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```
 alzheimers-ml/
@@ -28,7 +28,7 @@ alzheimers-ml/
 └── REPOSITORY_OVERVIEW.md       # Repository overview
 ```
 
-## 📄 File-by-File Breakdown
+## File-by-File Breakdown
 
 ### Root Level Files
 
@@ -497,7 +497,7 @@ models:
 
 ---
 
-## 🔄 Data Flow
+## Data Flow
 
 ### Cross-Sectional Pipeline
 ```
@@ -518,7 +518,7 @@ Longitudinal Data → Feature Engineering (with CDR) → XGBoost Model
 
 ---
 
-## 📊 Key Design Decisions
+## Key Design Decisions
 
 1. **Modular Structure**: Each component is in its own module for reusability
 2. **Separation of Concerns**: Data, features, models, and evaluation are separate
@@ -529,7 +529,7 @@ Longitudinal Data → Feature Engineering (with CDR) → XGBoost Model
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Install dependencies**: `pip install -r requirements.txt`
 2. **Place data files** in `data/` directory
@@ -538,7 +538,7 @@ Longitudinal Data → Feature Engineering (with CDR) → XGBoost Model
 
 ---
 
-## 📝 Notes
+## Notes
 
 - All paths are relative to repository root
 - Models are saved using joblib
